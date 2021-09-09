@@ -1,0 +1,31 @@
+<div class="text-center">
+  <h2>{{title}}</h2>
+  <p>{{content}}</p>
+  <p><b>Posted by {{user.name}} on {{format_date date_created}}</b></p>
+
+  <br><br><br>
+  <header>
+    <h4>Comments</h4 </header>
+
+    {{#each comments as |comment|}}
+    <div class="row mb-2">
+      <div class="col-md-12">
+        <p>{{comment.content}}</p>
+        <p><b>Comment written by {{user.name}} on {{format_date date_created}}</b></p>
+        <hr>
+      </div>
+    </div>
+    {{/each}}
+
+
+
+    <h4>Leave a comment</h4>
+    <textarea id="blog-comment" name="blog-comment" rows="2" cols="50"></textarea>
+    <br><br>
+    <button class="btn btn-primary blog-comment" type="submit">Submit</button>
+</div>
+
+<script>
+  const idd = {{ id }};
+</script>
+<script src="/js/comment.js"></script>

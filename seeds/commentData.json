@@ -1,0 +1,17 @@
+[
+    {
+        "content": "is this comment working???",
+        "user_id": 1,
+        "blog_id": 1
+    },
+    {
+        "content": "omg outstanding piece, bravo",
+        "user_id": 1,
+        "blog_id": 2
+    },
+    {
+        "content": "oi you stole this from me!!!!!!!!!!!!!",
+        "user_id": 1,
+        "blog_id": 3
+    }
+]
